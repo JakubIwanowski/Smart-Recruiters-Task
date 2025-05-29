@@ -1,0 +1,154 @@
+@use "fonts";
+@use "reset";
+@use "gallery";
+@use "modal";
+:root {
+  --color-primary: #13304a;
+  --color-secondary: #076d59;
+  --color-tertiary: #37b971;
+  --color-quatenary: #e9ece7;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-content: #222222;
+  --color-danger: #9f0000;
+}
+i,
+em {
+  font-style: italic;
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-image: linear-gradient(
+    var(--color-white) 30%,
+    var(--color-quatenary) 100%
+  );
+  padding: 30px 0;
+}
+h1,
+.h1 {
+  font-size: 3rem;
+  margin-block-end: 0.3em;
+}
+
+h2,
+.h2 {
+  font-size: 2.375rem;
+}
+
+h3,
+.h3 {
+  font-size: 2rem;
+  margin-block-end: 0.3em;
+}
+
+h4,
+.h4 {
+  font-size: 1.75rem;
+}
+
+h5,
+.h5 {
+  font-size: 1.5rem;
+}
+
+h6,
+.h6 {
+  font-size: 1.125rem;
+}
+
+p {
+  color: var(--color-content);
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+a {
+  color: var(--color-secondary);
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.container {
+  max-width: 75rem;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+.link {
+  color: var(--link-txt);
+  text-decoration: none;
+  padding: 8px 24px;
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+  background-color: var(--link);
+  font-weight: 600;
+  font-size: 1rem;
+  &:hover {
+    --main-color: var(--color-quatenary);
+    background-color: var(--link-hover);
+    border: 1px solid var(--link-hover);
+    color: var(--link);
+  }
+  &--primary {
+    --link-txt: var(--color-white);
+    --link: var(--color-primary);
+    --link-hover: var(--color-quatenary);
+    --icon-color: var(--color-white);
+    &:hover {
+      --icon-color: var(--color-primary);
+    }
+  }
+  &--secondary {
+    --link-txt: var(--color-white);
+    --link: var(--color-secondary);
+    --link-hover: var(--color-quatenary);
+    --icon-color: var(--color-white);
+    &:hover {
+      --icon-color: var(--color-secondary);
+    }
+  }
+  &__icon {
+    fill: var(--icon-color);
+    transition: all 0.5s ease-in-out;
+  }
+  &--icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+}
+.links {
+  display: flex;
+  gap: 15px;
+}
+
+.aspect-sm {
+  aspect-ratio: 420/250;
+}
+.aspect-m {
+  aspect-ratio: 420/500;
+}
+
+@media (min-width: 50rem) {
+  .aspect-sm,
+  .aspect-m {
+    aspect-ratio: unset;
+  }
+  .content {
+    max-width: 50rem;
+    margin: 0 auto;
+    &__heading {
+      text-align: center;
+    }
+  }
+
+  .links {
+    justify-content: center;
+  }
+}

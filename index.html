@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Gallery module</title>
+		<link href="assets/css/style.css" rel="stylesheet">
+		<script src="https://www.youtube.com/player_api"></script>
+		<script src="assets/js/index.js"></script>
+	</head>
+	<body>
+<main>
+<div class="container">
+				<div class="content">
+
+<h1 class="h1 content__heading">
+					Snippet Heading
+				</h1>	
+				<p>
+					Lorem <i>ipsum</i> dolor sit amet, <strong>consectetur</strong> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad <a href="#">minim</a> veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</p>
+				</div>
+				<h2 class="h3 content__heading">
+					Links
+				</h2>
+				<div class="links">
+<a href="#" class="link link--primary link--icon">
+						<span>
+Link One
+					</span>
+<svg class="link__icon" width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.90312 0.5625C9.7375 0.21875 9.3875 0 9.00313 0C8.61875 0 8.27187 0.21875 8.10312 0.5625L6.09375 4.69688L1.60625 5.35938C1.23125 5.41563 0.91875 5.67812 0.803125 6.0375C0.6875 6.39687 0.78125 6.79375 1.05 7.05937L4.30625 10.2812L3.5375 14.8344C3.475 15.2094 3.63125 15.5906 3.94062 15.8125C4.25 16.0344 4.65937 16.0625 4.99687 15.8844L9.00625 13.7437L13.0156 15.8844C13.3531 16.0625 13.7625 16.0375 14.0719 15.8125C14.3812 15.5875 14.5375 15.2094 14.475 14.8344L13.7031 10.2812L16.9594 7.05937C17.2281 6.79375 17.325 6.39687 17.2062 6.0375C17.0875 5.67812 16.7781 5.41563 16.4031 5.35938L11.9125 4.69688L9.90312 0.5625Z" />
+</svg>
+
+					</a>
+<a href="#" class="link link--secondary">Link Two</a>
+				</div>
+				<ul class="gallery">
+					<div class="gallery__left">
+					<li class="gallery__item">
+						<img class="gallery__image aspect-m" src="assets/img/img-1.png" alt="">
+					</li>
+					<li class="gallery__item">
+						<img class="gallery__image aspect-m" src="assets/img/img-2.png" alt="">
+					</li>
+						<li class="gallery__item gallery__item-wide">
+							<img class="gallery__image aspect-sm" src="assets/img/img-3.png" alt="">
+						</li>
+						</div>
+
+					<div class="gallery__right">
+					<li class="gallery__item">
+							<button type="button" class="gallery__btn">
+								<img class="gallery__image aspect-sm" src="assets/img/img-4.png" alt="">
+
+<svg class="gallery__play" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="48" height="48" rx="24" />
+<path d="M20.4219 13.8281C19.7281 13.4016 18.8563 13.3875 18.1484 13.786C17.4406 14.1844 17 14.9344 17 15.75V32.25C17 33.0656 17.4406 33.8156 18.1484 34.2141C18.8563 34.6125 19.7281 34.5938 20.4219 34.1719L33.9219 25.9219C34.5922 25.5141 35 24.7875 35 24C35 23.2125 34.5922 22.4906 33.9219 22.0781L20.4219 13.8281Z" />
+</svg>
+							</button>
+					</li>
+					<li class="gallery__item">
+						<img class="gallery__image aspect-m" src="assets/img/img-5.png" alt="">
+					</li>
+						</div>
+				</ul>
+</div>	
+			<dialog class="modal">
+<div class="modal__inner">
+		<div class="container">
+
+						<button type="button" class="modal__cls" autofocus value="Close">
+							<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="48" height="48" rx="24" />
+<path d="M31.0595 19.0594C31.6454 18.4734 31.6454 17.5219 31.0595 16.9359C30.4735 16.35 29.522 16.35 28.936 16.9359L24.0001 21.8766L19.0595 16.9406C18.4735 16.3547 17.522 16.3547 16.936 16.9406C16.3501 17.5266 16.3501 18.4781 16.936 19.0641L21.8767 24L16.9407 28.9406C16.3548 29.5266 16.3548 30.4781 16.9407 31.0641C17.5267 31.65 18.4782 31.65 19.0642 31.0641L24.0001 26.1234L28.9407 31.0594C29.5267 31.6453 30.4782 31.6453 31.0642 31.0594C31.6501 30.4734 31.6501 29.5219 31.0642 28.9359L26.1235 24L31.0595 19.0594Z" />
+</svg>
+
+						</button>
+						<div class="modal__content">
+						<h3 class="h3 modal__heading">Modal Heading</h3>
+							<p>
+								Lorem <i>ipsum</i> dolor sit amet, <strong>consectetur</strong> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad <a href="#">minim</a> veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</p>
+							</div>
+
+							<div id="myplayer">
+							</div>
+					</div>
+						</div>
+					
+</dialog>
+
+</main>	
+		<footer>
+			<div class="container">
+			<p>
+					<small>
+						<strong>Media copyright</strong> - Lorem ipsum dolor sit amet.
+					</small>
+				</p>	
+			</div>
+		</footer>
+		
+		<script>
+		</script>
+	</body>
+</html>
